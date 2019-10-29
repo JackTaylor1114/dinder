@@ -6,20 +6,41 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import { ProfilePage } from '../pages/profile/profile';
+import { MatchPage } from '../pages/match/match';
+import { ChatmainPage } from '../pages/chatmain/chatmain';
+import { ChatindPage } from '../pages/chatind/chatind';
+import { PhotoPage } from '../pages/photo/photo';
+import { LoginPage } from '../pages/login/login';
+
+import { SwipeCardsModule } from 'ng2-swipe-cards';
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    HomePage,
+    ProfilePage,
+    MatchPage,
+    ChatmainPage,
+    ChatindPage,
+    PhotoPage,
+    LoginPage
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    SwipeCardsModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+    ProfilePage,
+    MatchPage,
+    ChatmainPage,
+    ChatindPage,
+    PhotoPage,
+    LoginPage
   ],
   providers: [
     StatusBar,
